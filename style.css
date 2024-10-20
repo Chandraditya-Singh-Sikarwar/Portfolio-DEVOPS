@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  header {
+    background-color: #007bff;
+    padding: 20px 0;
+    color: white;
+  }
+  
+  header .logo {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #0056b3;
+    border-radius: 5px;
+  }
+  
+  header nav ul li a:hover {
+    background-color: #003f7f;
+  }
+  
+  section {
+    padding: 60px 0;
+  }
+  
+  section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .skills-list {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .skills-list li {
+    background-color: #007bff;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .project-item {
+    margin-bottom: 20px;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 50px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  form button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #0056b3;
+  }
+  
