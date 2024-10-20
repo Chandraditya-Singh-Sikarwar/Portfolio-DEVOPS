@@ -1,3 +1,4 @@
+/* General Styles */
 * {
   margin: 0;
   padding: 0;
@@ -5,87 +6,109 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #f8f9fa;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f9f9f9;
   color: #333;
 }
 
+/* Header */
 header {
-  background-color: #343a40;
+  background-color: #333;
   color: white;
   padding: 20px 0;
 }
 
 header .logo {
-  font-size: 30px;
-  font-weight: bold;
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 header nav ul {
-  list-style: none;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  list-style: none;
+}
+
+header nav ul li {
+  margin: 0 15px;
 }
 
 header nav ul li a {
   color: white;
   text-decoration: none;
-  padding: 10px;
-  transition: color 0.3s;
+  font-size: 18px;
 }
 
 header nav ul li a:hover {
   color: #ffdd57;
 }
 
+/* Hero Section */
 #hero {
-  background: url('hero-bg.jpg') center/cover no-repeat;
-  height: 400px;
+  background: url('assets/hero-bg.jpg') no-repeat center center/cover;
+  height: 100vh;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   text-align: center;
-  color: white;
 }
 
-#hero .cta {
+#hero h2 {
+  font-size: 50px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+#hero p {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.cta {
   background-color: #ffdd57;
-  padding: 10px 20px;
+  color: #333;
+  padding: 12px 24px;
   text-decoration: none;
-  color: #343a40;
   border-radius: 5px;
 }
 
-section {
-  padding: 60px 0;
+.cta:hover {
+  background-color: #e6c150;
 }
 
-#about, #skills, #projects, #certifications {
-  background-color: #fff;
-  padding: 50px 20px;
+/* Sections */
+section {
+  padding: 80px 0;
   text-align: center;
 }
 
+/* Skills and Projects */
 .skills-grid, .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+  gap: 30px;
 }
 
 .skill-item, .project-item {
-  background-color: #e9ecef;
+  background-color: #fff;
   padding: 20px;
   border-radius: 10px;
-  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-footer {
-  background-color: #343a40;
-  color: white;
-  text-align: center;
-  padding: 10px 0;
+/* Certifications */
+#certifications ul {
+  list-style: none;
 }
 
+#certifications ul li {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Contact Form */
 form {
   display: flex;
   flex-direction: column;
@@ -99,13 +122,21 @@ form input, form textarea {
 }
 
 form button {
-  padding: 10px;
   background-color: #007bff;
   color: white;
+  padding: 12px;
   border: none;
   cursor: pointer;
 }
 
 form button:hover {
   background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
 }
